@@ -1,0 +1,404 @@
+@font-face {
+    font-family: "avenir";
+    src: url("fonts/avenir.otf");
+}
+@font-face {
+    font-family: "gotham-bold";
+    src: url("fonts/gotham-bold.otf");
+}
+@font-face {
+    font-family: "gotham-medium";
+    src: url("fonts/gotham-medium.otf");
+}
+body {
+    margin: 0;
+    margin-top: -2vw;
+}
+header {
+  height: 40vw;
+  background-image: url("assets/priscilla-du-preez-623040-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgb(139, 69, 19, 0.3);
+  background-blend-mode: darken;
+}
+nav {
+  margin: 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  font-family: "gotham-bold";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 10%;
+  height: 8vw;
+  background-color: #F7CE3E;
+  font-size: 2.8vw;
+  margin-top: 2vw;
+}
+.buttons {
+  display: flex;
+  width: 70vw;
+  justify-content: space-between;
+  margin-top: 2vw;
+}
+.buttons div {
+  display: flex;
+  height: 35%;
+  width: 16.5%;
+  background-color: #1A2930;
+  justify-content: center;
+  align-items: center;
+}
+.buttons div:hover {
+    background-color: #F7CE3E;
+}
+.buttons div p {
+  color: white;
+  font-size: 1.6vw;
+  font-family: "gotham-medium";
+}
+#search {
+  display: flex;
+  width: 4.4%;
+  justify-content: center;
+  align-items: center;
+}
+#magnifying-glass
+{
+ font-size: 2.4vw;
+ display: inline-block;
+ width: 0.4em;
+ height: 0.4em;
+ border: 0.08em solid white;
+ position: relative;
+ border-radius: 0.35em;
+}
+#magnifying-glass::before
+{
+ content: "";
+ display: inline-block;
+ position: absolute;
+ right: -0.25em;
+ bottom: -0.1em;
+ border-width: 0;
+ background: white;
+ width: 0.35em;
+ height: 0.1em;
+ border-radius: 0.5em;
+ -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+     -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+}
+.heading {
+  display: flex;
+  height: 25vw;
+  flex-direction: column;
+  align-items: center;
+}
+.heading div h1, .heading div p {
+    color: white;
+    font-family: "gotham-medium";
+    font-weight: normal;
+}
+.title {
+  display: flex;
+  justify-content: center;
+}
+.title h1 {
+  font-size: 5vw;
+}
+.intro {
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.intro p {
+  font-size: 1.6vw;
+}
+.staff {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 20vw);
+  grid-gap: 2vw;
+  padding: 3vw;
+}
+.staff div {
+}
+.meet {
+  display: flex;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: #1A2930;
+  justify-content: center;
+  align-items: center;
+}
+.meet p {
+  width: 80%;
+  font-size: 3.5vw;
+  color: #C5C1C0;
+  font-family: "gotham-bold";
+}
+.quote {
+  display: flex;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 3;
+  background-color: #F7CE3E;
+  justify-content: center;
+  align-items: center;
+}
+.quote p {
+  width: 80%;
+  font-size: 3.5vw;
+  font-family: "gotham-bold";
+}
+.name-tag {
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  height: 15%;
+}
+.name-tag p {
+  align-self: center;
+  font-size: 1.3vw;
+  font-family: "gotham-bold";
+}
+.chip, .andrea, .peter, .fred, .dike {
+  display: flex;
+  justify-content: flex-end;
+}
+.sarah .name-tag, .chip .name-tag {
+  background-color: #C5C1C0;
+}
+.dike .name-tag, .mark .name-tag {
+  background-color: #1A2930;
+}
+.dike .name-tag p, .mark .name-tag p {
+  color: #C5C1C0;
+}
+.fred .name-tag, .paula .name-tag {
+  background-color: black;
+}
+.fred .name-tag p, .paula .name-tag p {
+  color: #F7CE3E;
+}
+.peter .name-tag, .andrea .name-tag {
+  background-color: #F7CE3E;
+}
+.peter .name-tag p, .andrea .name-tag p {
+  color: black;
+}
+.sarah {
+  background-image: url("assets/sarah-sze.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.dike {
+  background-image: url("assets/dike-blair.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.peter {
+  background-image: url("assets/Peter_Doig.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.fred {
+  background-image: url("assets/fred-wilson.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.mark {
+  background-image: url("assets/mark-leckey.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.paula {
+  background-image: url("assets/paula-scher.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.andrea {
+  background-image: url("assets/andrea-scher.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.chip {
+  background-image: url("assets/chip-kidd.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.footer {
+  display: flex;
+  height: 25vw;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #1A2930;
+}
+.footer div {
+  display: flex;
+  flex-direction: column;
+  width: 26vw;
+  height: 18vw;
+  justify-content: center;
+}
+.footer div h2 {
+  color: white;
+  align-self: center;
+  font-size: 2.3vw;
+  font-family: "gotham-medium";
+}
+
+/*this is the start of the css for the students page*/
+
+#student-header {
+  color: #F7CE3E;
+}
+.notable {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 20vw);
+  grid-gap: 2vw;
+  padding: 3vw;
+}
+.where {
+  display: flex;
+  flex-direction: column;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  background-color: #1A2930;
+  justify-content: center;
+  align-items: center;
+}
+.where p {
+  width: 75%;
+  font-size: 3.5vw;
+  font-family: "gotham-bold";
+  color: #C5C1C0;
+}
+.divider {
+  height: 1vw;
+  width: 22vw;
+  background-color: #F7CE3E;
+}
+.jon, .gemma, .jessica, .mike {
+  display: flex;
+  justify-content: flex-end;
+}
+.jon .name-tag, .mike .name-tag {
+  background-color: #C5C1C0;
+}
+.gemma .name-tag, .jessica .name-tag {
+  background-color: #F7CE3E;
+}
+.jon {
+  background-image: url("assets/jon-contino.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.gemma {
+  background-image: url("assets/gemma-obrien.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.jessica {
+  background-image: url("assets/jessica-walsh.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.mike {
+  background-image: url("assets/mike-perry.png");
+  background-position: top;
+  background-size: cover;
+}
+.bios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 24vw);
+  grid-gap: 4vw;
+  padding: 3vw;
+}
+.lauren-pic {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-image: url("assets/lauren.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.chad-pic {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-image: url("assets/chad.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.sarah2-pic {
+  grid-row-start: 3;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-image: url("assets/sarah2.png");
+  background-position: center;
+  background-size: cover;
+}
+.logan-pic {
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  background-image: url("assets/logan.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.lauren {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-row-start: 1;
+  grid-column-start: 3;
+}
+.chad {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-row-start: 2;
+  grid-column-start: 3;
+}
+.sarah2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-row-start: 3;
+  grid-column-start: 3;
+}
+.logan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  grid-row-start: 4;
+  grid-column-start: 3;
+}
+.bios h1 {
+  font-size: 3.1vw;
+  font-family: "gotham-bold";
+  font-weight: normal;
+}
+.bios h2 {
+  font-size: 2.3vw;
+  margin-top: -1.6vw;
+  margin-bottom: -.4vw;
+  font-family: "gotham-bold";
+  font-weight: normal;
+}
+.bios p {
+  font-size: 1.5vw;
+  font-family: "gotham-medium";
+}
